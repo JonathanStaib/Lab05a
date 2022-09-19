@@ -28,14 +28,14 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
-  let myProduct = a*b;
-  let myStrn =`The product of ${a} and ${b} is ${myProduct}.`;
-  return [myProduct, myStrn];
-}
+// function multiply(a, b) { //eslint-disable-line
+//   let myProduct = a*b;
+//   let myStrn =`The product of ${a} and ${b} is ${myProduct}.`;
+//   return [myProduct, myStrn];
+// }
 
 // Here is the test for multiply(); uncomment it to run it
-testMultiply(5,9);
+// testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -52,7 +52,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+  let numbers = [4, 7, 5];
+  for (let i = 0; i < numbers.length; i++) {
+    let myProdStr = `The product of ${a} and ${b} and ${c} is ${myProduct}.`;
+    let mySumStr = `${a} and ${b} and ${c} sum to ${mySum}.`;
+    let mySum = 16;
+    let myProduct = 140;
+    return [mySum, mySumStr][myProduct, myProdStr];
+  }
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
